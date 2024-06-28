@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+      rel="stylesheet" />
+    <script src="script.js" defer></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+      integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"></script>
+    <title>SG Cafe</title>
+  </head>
+
+  <body>
+    <div class="bg"></div>
+    <div class="main" id="main">
+      <nav>
+        <div class="logo"><img src="assets/logo.png" alt="" /></div>
+        <!-- navbar -->
+        <div class="notch-nav">
+          <a href="#hero-box">Home</a>
+          <a>Menu</a>
+          <a>App</a>
+          <a>About Us</a>
+          <i class="ri-restaurant-line"></i>
+        </div>
+      </nav>
+      <!-- hero section -->
+      <div class="hero-box" id="#hero-box">
+        <div class="hero-box1">
+          <div class="hero-heading">
+            Delicious <br />Food is Waiting For you
+          </div>
+          <div class="hero-menu">
+            <a href="">
+              <pre>View Menu      <i class="ri-arrow-right-line"></i></pre>
+            </a>
+          </div>
+          <div class="hero-icons">
+            <div class="icon-box1"><i class="ri-beer-line"></i></div>
+            <div class="icon-box2"><i class="ri-bowl-line"></i></div>
+            <div class="icon-box3"><i class="ri-cake-2-line"></i></div>
+            <div class="icon-box4"><i class="ri-drinks-2-line"></i></div>
+          </div>
+        </div>
+        <div class="hero-box2">
+          <div class="hero-box-img1">
+            <img src="assets/food-bowl (3).webp" alt="" />
+          </div>
+          <div class="hero-box-img2">
+            <img src="assets/lemon.webp" alt="" />
+          </div>
+        </div>
+      </div>
+
+      <!-- page2 -->
+      <div class="page-2" id="page-2">
+        <div class="dish-box1">
+          <div class="bowl-box" id="bowl-box1">
+            <img src="assets/menu-dish (1).webp" alt="" />
+            <div class="menu-info">
+              <div class="menu-caption"><span>Kuch sandwitch</span></div>
+              <div class="heart" onclick="heart()">
+                <i class="ri-heart-line"></i>
+              </div>
+              <div class="menu-caption2">Spicy & Flavourfull</div>
+              <div class="price">$34.56</div>
+              <div class="cart"><i class="ri-shopping-cart-2-line"></i></div>
+            </div>
+          </div>
+          <div class="bowl-box" id="bowl-box2">
+            <img src="assets/menu-dish (2).webp" alt="" />
+            <div class="menu-info">
+              <div class="menu-caption"><span>Khichdi Bowl</span></div>
+              <div class="heart" onclick="heart()">
+                <i class="ri-heart-line"></i>
+              </div>
+              <div class="menu-caption2">Spicy & Sweet</div>
+              <div class="price">$56.10</div>
+              <div class="cart"><i class="ri-shopping-cart-2-line"></i></div>
+            </div>
+          </div>
+          <div class="bowl-box" id="bowl-box3">
+            <img src="assets/menu-dish (3).webp" alt="" />
+            <div class="menu-info">
+              <div class="menu-caption"><span>Dal Makhni</span></div>
+              <div class="heart"><i class="ri-heart-line"></i></div>
+              <div class="menu-caption2">Spicy & Sweet</div>
+              <div class="price">$28.43</div>
+              <div class="cart"><i class="ri-shopping-cart-2-line"></i></div>
+            </div>
+          </div>
+        </div>
+        <div class="dish-box2">
+          <div class="dish-box2-heading">
+            We have Delicious Food, <br />
+            We atleast believe that
+          </div>
+          <div class="dish-box2-caption">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi a
+            alias necessitatibus, tempora autem quidem suscipit quaerat
+            distinctio hic beatae blanditiis.
+          </div>
+          <img src="assets/icecream.webp" alt="" />
+        </div>
+      </div>
+
+      <!-- page2 for responsiveness -->
+      <div class="page2R">
+        <div class="Rbox1">
+          <div class="Rchild Rchild-box1">
+            <img src="assets/menu-dish (1).webp" alt="" />
+            <div class="Rchild-menu">
+              <div class="menu-box1">
+                <h1>Kuch sandwitch</h1>
+                <h2>Spicy & Flavourfull</h2>
+                <h4>$34.56</h4>
+              </div>
+              <div class="menu-box2"><i class="ri-heart-line"></i></div>
+            </div>
+          </div>
+          <div class="Rchild Rchild-box2">
+            <img src="assets/menu-dish (2).webp" alt="" />
+            <div class="Rchild-menu" style="margin-top: 3.3vh">
+              <div class="menu-box1">
+                <h1>Khichdi Bowl</h1>
+                <h2>Spicy & Sweet</h2>
+                <h4>$56.10</h4>
+              </div>
+              <div class="menu-box2"><i class="ri-heart-line"></i></div>
+            </div>
+          </div>
+          <div class="Rchild Rchild-box3">
+            <img src="assets/menu-dish (3).webp" alt="" />
+            <div class="Rchild-menu">
+              <div class="menu-box1">
+                <h1>Dal Makhni</h1>
+                <h2>Kha ke dekh lena</h2>
+                <h4>$28.43</h4>
+              </div>
+              <div class="menu-box2"><i class="ri-heart-line"></i></div>
+            </div>
+          </div>
+          <div class="Rchild Rchild-box4">
+            <img src="assets/menu-dish (4).webp" alt="" />
+            <div class="Rchild-menu" style="margin-top: -4vh">
+              <div class="menu-box1">
+                <h1>Dal Makhni</h1>
+                <h2>Kha ke dekh lena</h2>
+                <h4>$28.43</h4>
+              </div>
+              <div class="menu-box2"><i class="ri-heart-line"></i></div>
+            </div>
+          </div>
+        </div>
+        <div class="Rbox2">
+          <div class="dish-box2-heading" style="font-size: 5vw">
+            We have Delicious Food, <br />
+            We atleast believe that
+          </div>
+          <div
+            class="dish-box2-caption"
+            style="
+              margin-top: 6vh;
+              font-size: 1.5vw;
+              line-height: 1.5vh;
+              color: black;
+            ">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi a
+            alias necessitatibus, tempora autem quidem suscipit quaerat
+            distinctio hic beatae blanditiis.
+          </div>
+          <img src="assets/icecream.webp" alt="" />
+        </div>
+      </div>
+
+      <!-- page3 -->
+      <div class="page3">
+        <!-- <img src="assets/cooking-thai-food-min.gif" alt="" class="gifhai" /> -->
+        <!-- <h1 class="chef">Our chef!!!</h1> -->
+        <div class="page3-box1">
+          <div class="pg3-heading">
+            Our team of registered and unskilled cooks can kill you any time so
+            enter on your own responsibility.
+          </div>
+          <div class="pg3-caption">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta in
+            officiis iusto eveniet nisi dolores tenetur doloribus deserunt
+            ratione eligendi. Lorem ipsum dolor sit amet consectetur adipisicing
+            elit. Ad ipsa odit error recusandae, ratione nulla corrupti quis
+            quas iure nobis?
+          </div>
+          <img src="assets/pasta-fork.webp" alt="" />
+        </div>
+        <div class="page3-box2">
+          <img src="assets/pasta.webp" alt="" />
+          <div class="price-circle">$25.86</div>
+          <img src="assets/patta (1).webp" alt="" />
+          <img src="assets/patta (2).webp" alt="" />
+          <img src="assets/tomato (2).webp" alt="" />
+        </div>
+      </div>
+
+      <!-- page4 -->
+      <div class="page4">
+        <div class="page4-box1">
+          <div class="p4b1 p4b">
+            <span class="cartp4">
+              <i class="ri-shopping-cart-2-line"></i>
+            </span>
+            <i class="ri-bar-chart-horizontal-line"></i>
+            <div class="p4b1-heading">Delicious Food</div>
+            <div class="p4b1-caption">
+              We are liers!!! so better you dont trust this
+            </div>
+            <div class="p4b1-icons">
+              <div class="p4icon">
+                <div class="icon-box1"><i class="ri-beer-line"></i></div>
+              </div>
+              <div class="p4icon">
+                <div class="icon-box2"><i class="ri-bowl-line"></i></div>
+              </div>
+              <div class="p4icon">
+                <div class="icon-box3"><i class="ri-cake-2-line"></i></div>
+              </div>
+              <div class="p4icon">
+                <div class="icon-box4"><i class="ri-drinks-2-line"></i></div>
+              </div>
+            </div>
+            <div class="p4c2-child">
+              <div class="p4c1 p4c">
+                <img src="assets/food-bowl (1).webp" alt="" />
+                <div class="p4c1text p4text">
+                  <h1>Pasta!!!</h1>
+                  <p>Spicy and Juicy</p>
+                  <h4>56.65$</h4>
+                  <div class="p4-heart">
+                    <i class="ri-heart-line"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="p4c2 p4c">
+                <img src="assets/food-bowl (5).webp" alt="" />
+                <div class="p4c2text p4text">
+                  <h1>Momo's</h1>
+                  <p>Spicy and Cheesy</p>
+                  <h4>40.30$</h4>
+                  <div class="p4-heart">
+                    <i class="ri-heart-line"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="p4c3">
+              <p>Patato something</p>
+              <p>eat it on your own risk</p>
+              <h5>$34.45</h5>
+              <img src="assets/food-bowl (3).webp" alt="" />
+            </div>
+          </div>
+          <div class="p4b2 p4b">
+            <div class="dots-icon">
+              <i class="ri-arrow-left-s-line"></i>
+              <i class="ri-more-2-fill"></i>
+            </div>
+            <div class="p4b2-sec1">
+              <img src="assets/food-bowl (3).webp" alt="" />
+            </div>
+            <div class="p4b2-sec2">
+              <p>Egg Curry</p>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Architecto temporibus ratione deleniti sint reprehenderit
+                quaerat quas quae, at rerum aut.
+              </p>
+              <p>Bowl Price</p>
+              <div class="p4-heart2">
+                <i class="ri-heart-line"></i>
+              </div>
+              <p>$34.45</p>
+            </div>
+          </div>
+        </div>
+        <div class="page4-box2">
+          <div class="p4-heading">App is Available</div>
+          <div class="p4-discription">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut
+            molestiae doloremque sunt architecto commodi delectus, repellat id
+            nostrum inventore, dolorem nam quasi officia?
+          </div>
+          <div class="p4-logos">
+            <img src="assets/playstore-logo.webp" alt="" />
+            <img src="assets/apple-logo.webp" alt="" />
+          </div>
+        </div>
+      </div>
+
+      <!-- page 4 respo -->
+      <div class="page4ris">
+        <div class="block1">
+          <div class="block1c1">
+            <div class="scrp4">
+              <i class="ri-shopping-cart-2-line"></i>
+            </div>
+            <i class="ri-bar-chart-horizontal-line bar-line"></i>
+            <div class="headingr4">Delicious Food</div>
+            <div class="captionr4">
+              We are liers!!! so better you dont trust this
+            </div>
+            <div class="iconr4">
+              <div class="icon1r4">
+                <i class="ri-beer-line"></i>
+              </div>
+              <div class="icon2r4">
+                <i class="ri-bowl-line"></i>
+              </div>
+              <div class="icon3r4">
+                <i class="ri-cake-2-line"></i>
+              </div>
+              <div class="icon4r4">
+                <i class="ri-drinks-2-line"></i>
+              </div>
+            </div>
+            <div class="foodtrayr4">
+              <div class="foodtray1r4">
+                <img src="assets/food-bowl (1).webp" alt="" />
+                <div class="fooddisr4">Pasta!!!</div>
+                <div class="discapr4">Spicy and Juicy</div>
+                <div class="pricer4">56.65$</div>
+                <span class="lastheartr4">
+                  <i class="ri-heart-line"></i>
+                </span>
+              </div>
+              <div class="foodtray2r4">
+                <img src="assets/food-bowl (5).webp" alt="" />
+                <div class="fooddisr4">Momo's</div>
+                <div class="discapr4">Spicy and cheesy</div>
+                <div class="pricer4">40.30$</div>
+                <span class="lastheartr4">
+                  <i class="ri-heart-line"></i>
+                </span>
+              </div>
+              <div class="lasttrayr4">
+                <div class="lastheadr4">Patato something</div>
+                <div class="lastcapr4">Eat it on your own risk</div>
+                <div class="lastpricer4">$34.45</div>
+                <img src="assets/food-bowl (3).webp" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="block1c2">
+            <div class="firstliner4">
+              <i class="ri-arrow-left-s-line"></i>
+              <i class="ri-more-2-fill"></i>
+            </div>
+            <img src="assets/food-bowl (3).webp" alt="" />
+            <div class="block2disr4">Egg Curry</div>
+            <div class="lastcapboxr4">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Repudiandae magnam nihil vitae magni veritatis accusamus porro
+              recusandae ipsam tempora.
+            </div>
+            <div class="bowllastr4">Bowl Price</div>
+            <div class="lastpriceb2r4">$34.45</div>
+            <span class="lastheartb2r4">
+              <i class="ri-heart-line"></i>
+            </span>
+          </div>
+        </div>
+        <div class="block2">
+          <div class="block2geadr4">App is Available</div>
+          <div class="block2perar4">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore
+            cupiditate suscipit voluptatibus pariatur possimus quibusdam laborum
+            atque assumenda omnis molestias, ut adipisci, est nam culpa?
+          </div>
+          <div class="lastphotospacer4">
+            <img src="assets/apple-logo.webp" alt="" />
+            <img src="assets/playstore-logo.webp" alt="" />
+          </div>
+        </div>
+      </div>
+      <div class="page5">
+        <div class="page5lt">LET'S TALK.</div>
+        <div class="secondline5">
+          <div class="want">Want Reserve a table?</div>
+          <div class="contactp5">Contact us now</div>
+        </div>
+        <div class="finalcapp5">
+          We are team of professional mechanics and engineer's so we have
+          nothing to do with cooking so don't blame us for taste.
+        </div>
+        <div class="finalblockp5">
+          <div class="finalblkchl1dp5">
+            Taste
+            <p>We dont really care</p>
+          </div>
+          <div class="finalblkchl2dp5">
+            Our Servicies
+            <ul>
+              <li>Pricing</li>
+              <li>Tracking</li>
+              <li>Report & Bugs</li>
+              <li>Terms of Service</li>
+            </ul>
+          </div>
+          <div class="finalblkchl3dp5">
+            Our Company
+            <ul>
+              <li>Reporting</li>
+              <li>Get in Touch</li>
+              <li>Management</li>
+            </ul>
+          </div>
+          <div class="finalblkchl4dp5">
+            Address
+            <ul>
+              <li>123 lings corner,</li>
+              <li>lane 3 ,street luis.</li>
+              <li>888-3332-434</li>
+              <li>infonotfound@gmail.com</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

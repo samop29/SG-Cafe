@@ -2,6 +2,10 @@
 // heart.addEventListener("click", ()=>{
 //     alert("Added to Favorites!!!")
 // });
+const loder = document.querySelector(".loder");
+window.addEventListener("load", ()=>{
+  loder.style.display="none";
+});
 function heart(){
     alert("Added to Favorites!!!");
 }

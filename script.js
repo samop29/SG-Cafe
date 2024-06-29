@@ -2,7 +2,7 @@
 // heart.addEventListener("click", ()=>{
 //     alert("Added to Favorites!!!")
 // });
-// const loder = document.querySelector(".loder");
+const loder = document.querySelector(".loder");
 window.addEventListener("load", ()=>{
   loder.style.display="none";
 });

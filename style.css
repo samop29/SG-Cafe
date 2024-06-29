@@ -874,6 +874,11 @@ i {
 }
 
 @media (max-width: 720px) {
+  .loder img {
+    width: 40%;
+    position: relative;
+    bottom: 7vh;
+  }
   nav {
     height: 5vh;
     width: 100%;
